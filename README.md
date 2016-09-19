@@ -11,7 +11,7 @@
 <br>
 > **Unit2. Python Basic**<br>
 > :calendar: 2016.09.19~
-- 1. python °³¹ßÈ¯°æ ±¸Ãà / ³»Àå ÀÚ·á±¸Á¶ / File I/O / Lambda
+- 1. python ê°œë°œí™˜ê²½ êµ¬ì¶• / ë‚´ì¥ ìë£Œêµ¬ì¡° / File I/O / Lambda
 
 #5. private Study<br>
 >- [Data Structure](https://github.com/Stardustrain/codePractice/tree/master/dataStructure)
