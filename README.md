@@ -15,3 +15,4 @@
 #5. private Study<br>
 >- [Data Structure](https://github.com/Stardustrain/codePractice/tree/master/dataStructure)
 >- [Effective python](https://github.com/Stardustrain/codePractice)
+>- [PEP 8](https://www.python.org/dev/peps/pep-0008/)
