@@ -15,4 +15,3 @@
 #5. private Study<br>
 >- [Data Structure](https://github.com/Stardustrain/codePractice/tree/master/dataStructure)
 >- [Effective python](https://github.com/Stardustrain/codePractice)
->- [Detail Schedule] (https://trello.com/b/xJknPuJg/private-study)
