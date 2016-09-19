@@ -46,20 +46,20 @@
 > ```python
 > "dog,cat,fish".split(",")
 > ```
-> >>>[dog, cat, fish]
+> [dog, cat, fish]
 >- join
 >    * 특정 parameter를 매개로 문자열을 만들어 반환
 >    * eval()과 함께 사용할 경우 쉽게 수식 계산이 가능함
 > ```python
 > ":".join([a, b, c])
 > ```
-> >>>"a : b : c"
+> "a : b : c"
 >- replace
 >    * 특정 문자열을 replacing
 > ```python
 > data.replace("\t", ",")
 > ```
-> >>> \t가 ,로 변환됨
+> \t가 ,로 변환됨
 >- format
 >    * 출력시 %s, %d 등을 대체하는 기능
 > ```python
