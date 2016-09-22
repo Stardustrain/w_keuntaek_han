@@ -12,7 +12,7 @@
 > **Unit2. Python Basic**<br>
 > :calendar: 2016.09.19~
 - 1. python 개발환경 구축 / 내장 자료구조 / File I/O / Lambda
-- 2. List Comprehension / Lambda Operator / *args **kwargs
+- 2. List Comprehension / Lambda Operator / \*args **kwargs
 - 3. Decorator / 재귀함수
 - 4. class
 
