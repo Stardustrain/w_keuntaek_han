@@ -1,0 +1,84 @@
+<!-- html:5 + [tab]-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./day01.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 블록은 줄바꿈이 일어남 -->
+  <h1>블록 요소</h1>
+  <p>마찬가지로 블록</p>
+  <div>또한 블록</div>
+
+  <!-- 인라인은 줄바꿈이 일어나지 않음 -->
+  <strong>Strong</strong>
+  <a href="" id="pseudo-id">a tag</a>
+  <span>span 요소</span>
+
+  <!-- 문단을 구성하는 P 태그 -->
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quia numquam labore optio, in quas omnis vitae sed accusantium exercitationem.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, quas!</p>
+
+  <!-- headline -->
+  <h1>HTML</h1>
+  <h2>Histroy</h2>
+  <h3>Develop</h3>
+
+  <!-- 목록 -->
+  <!-- 1. ordered List-->
+  <ol>
+    <ul>css test</ul>
+    <li>순서 항목
+        <ul> 순서의 다음 순서 </ul>
+    </li>
+    <li>순서 항목</li>
+    <li>순서 항목</li>
+    <li>순서 항목</li>
+    <li>순서 항목</li>
+  </ol>
+
+  <!-- 2. unordered List-->
+  <ul>
+    <li id="liTest">순서가 없는 항목</li>
+    <li attr="val">순서가 없는 항목</li>
+    <li attr="item val">순서가 없는 항목</li>
+    <li attr="value">순서가 없는 항목</li>
+    <li attr=item-val>순서가 없는 항목</li>
+  </ul>
+    <!-- 3. 정의 목록-->
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperTextMarkupLanguage</dd>
+      <dd>웹페이지 구성</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheet</dd>
+    </dl>
+
+    <dl>
+      <dt>CSS우선순위</dt>
+      <ol>
+        <dd><li>!important</li></dd>
+        <dd><li>inline</li></dd>
+        <dd>
+          <li>ID</li>
+        </dd>
+        <dd>
+          <li>Class</li>
+        </dd>
+        <dd>
+          <li>Tag</li>
+        </dd>
+      </ol>
+    </dl>
+
+  <!-- 4. 레이아웃 요소 -->
+  <div style="background: black;">
+    <p id="divInP">블럭내부에 <span id="divInSpan">인라인 요소 사용</span></p>
+  </div>
+</body>
+</html>

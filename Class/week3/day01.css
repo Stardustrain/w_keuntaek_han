@@ -1,0 +1,71 @@
+/* *는 전체 문서에 대한 스타일
+*{
+  color : green
+  color : green !important
+  !important는 무조건적인 우선순위를 배정받음
+
+}
+*/
+p {
+  color : gray
+}
+
+#divInSpan{
+  color : red
+}
+
+#divInP{
+  color : blue
+}
+
+#pseudo-id:hover{
+  font-size: 30px
+}
+
+/* ol하위의 모든 ul tag 적용 */
+ol ul {
+  font-weight: bold;
+}
+/* 명확한 상속 관계 명시 */
+ol>ul{
+  font-style: italic;
+}
+
+/* 본인을 제외한 바로 옆의 형제 태그 */
+li#liTest+li{
+  font-weight : bold;
+}
+
+/* 본인을 제외한 모든 형제 태그 */
+li#liTest~li{
+  font-style: italic;
+}
+
+/* attr 요소가 있는 모든 태그 */
+li[attr] {
+  color:green
+}
+
+/* regexp의 느낌 */
+/* attr속성의 값이 val */
+li[attr="val"]{
+  color : red
+}
+
+/* attr속성의 값이 val을 포함 : 공백값이 반드시 일치 */
+li[attr~="val"]{
+  color:blue
+}
+
+/* attr속성의 값이 val을 포함 : 공백, - 에 영향 받지 않음 */
+li[attr*="val"]{
+
+}
+
+li[attr^="val"]{
+  color : gray
+}
+
+li[attr$="val"]{
+  color : pink
+}
