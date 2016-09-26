@@ -18,7 +18,7 @@
 - 5. site 크룰링 / Generator, Iterator
 
 <br>
-> **Unit3. HTML / CSS<br>
+> **Unit3. HTML / CSS**<br>
 > :calendar: 2016.09.26~2016.09.30
 - 1. 태그 / 선택자 / 간단한 CSS
 
