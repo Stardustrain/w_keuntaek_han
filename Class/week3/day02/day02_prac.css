@@ -1,0 +1,130 @@
+html, body{
+  padding :0;
+  margin : 0;
+}
+
+.acticle-container{
+  margin: 0 19rem 0 19rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: white;
+
+}
+
+hr{
+  margin-top: -15px;
+}
+
+p.time{
+
+  text-align: right;
+}
+
+a.link{
+  color : blue;
+  text-decoration: none;
+}
+
+li.mark{
+  list-style:none;
+}
+
+a.link:hover{
+  text-decoration: underline;
+}
+
+a.bqinlink{
+  color: green;
+  text-decoration: none;
+}
+
+a.bqinlink:hover{
+  text-decoration: underline;
+}
+
+a.linkcancle{
+  text-decoration: line-through;
+}
+
+table{
+  background-color: #dddddd;
+  border-collapse: collapse;
+  margin : auto;
+}
+
+tr, td{
+  text-align: center;
+  border: 1px solid black;
+  padding:5px;
+}
+
+h2{
+  margin-top:20px;
+}
+
+.order{
+  margin-top: 100px;
+  margin-left: 30px;
+  border : 1px solid #dddddd;
+  display: inline-table;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+
+.ordertext{
+  display: block;
+}
+
+.innertext{
+  display: block;
+  margin-left: 20px;
+}
+
+.contents{
+  margin-top: 50px;
+  margin-left: 20px;
+  box-sizing:
+  padding: 20px;
+}
+
+.bq{
+  padding: 10px;
+  background-color: lightgray;
+  border:2px dashed gray;
+  border-left: 4px solid yellowgreen;
+}
+
+.movietable{
+  width: 90%;
+  font-size: 80%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  /*margin: auto;*/
+}
+
+.etcth{
+  padding:10px;
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+}
+
+.etctd {
+border: 1px solid lightgray;
+  padding:10px;
+  background-color: white;
+}
+
+.movieimg{
+  width:432px;
+  height: 154px;
+}
+
+.linklist{
+  display: block;
+}
+
+.linkdiv{
+  padding:10px;
+  margin-bottom: 20px;
+}

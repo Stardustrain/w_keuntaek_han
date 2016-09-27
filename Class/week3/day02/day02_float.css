@@ -1,0 +1,64 @@
+div.float-element{
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background: black;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  opacity: 0.6;
+}
+
+.float-frame{
+  width:300px;
+  background-color: #eee;
+  border:1px solid #ddd;
+  padding: 10px;
+  /*unit들의 float시 부모의 height를 인식하지 못하는 경우*/
+  overflow: auto;
+  overflow: hidden;
+   /*unit들의 float시 부모의 height를 인식하지 못하는 경우*/
+   /*float:left;*/
+}
+
+.float-unit{
+  width: 50px;
+  background: #333;
+  color:#fff;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  margin-right: 5px;
+  float: left;
+}
+
+/*float의 영향을 받지 않고 블럭 속성으로 복귀*/
+.float-text{
+  clear:left;
+}
+
+.float-img{
+  float: left;
+}
+
+.test{
+  width:100px;
+  height: 100px;
+  background-color: blue;
+  display: block;
+}
+
+.fl1{
+  /*float: left;*/
+  float: left;
+}
+
+.fl2{
+  /*float: right;*/
+  float: left;
+}
+
+.fl3{
+  float: left;
+}

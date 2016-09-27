@@ -1,0 +1,104 @@
+html, body{
+  margin : 0;
+  padding : 0;
+}
+
+ul.list-style-inside{
+  list-style-position: inside;
+}
+
+ul.list-style-outside{
+  list-style-position: outside;;
+}
+
+/*padding과 보더 등을 포함한 크기를 맞춤*/
+div.border-box{
+  width : 200px;
+  height: 100px;
+  border: 10px solid red;
+  padding: 15px;
+  box-sizing: border-box;
+  margin:10px;
+}
+
+/* 컨텐츠 박스를 기준으로 크기를 맞춤*/
+div.content-box{
+  width : 200px;
+  height: 100px;
+  border: 10px solid red;
+  padding: 15px;
+  box-sizing: content-box;
+  margin: 10px;
+}
+
+/* div 태그와 내부 컨턴츠 사이의 공간 */
+div.box-padding1{
+  width:200px;
+  height: 100px;
+  padding: 30px;
+  background-color: yellow;
+}
+
+div.box-padding2{
+  width:200px;
+  height: 100px;
+  padding: 40px;
+  background-color: cyan;
+}
+
+/* 세로마진은 겹치고 좌우마진은 겹치지 않는다 */
+div.box-margin{
+  border: 1px solid red;
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+div.box-margin2{
+  background-color: darkgreen;
+  width:300px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+span.span-margin{
+  background-color: darkblue;
+  width:200px;
+  height:100px;
+  margin:20px 30px 40px 50px;
+  color:white;
+}
+
+div.property{
+  margin-top:70px;
+  margin-left:100px;
+  width : 300px;
+  height: 300px;
+  border : 1px solid black;
+  background-repeat: no-repeat;
+/*
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+*/
+/* left, right, top, bottom, center*/
+/*  background-position: 50%(이미지의 크기 기준) 16px;  x축 y축*/
+  background-position: center right; /* 왼쪽 오른쪽은 / 위 아래에 쓰이는 태그 구분*/
+/* local : 스크롤시 이미지가 div에서 설정한 위치에 고정
+  scroll : 스크롤시 이미지 고정
+  fixed : 바디의 왼쪽 위를 기준으로 고정
+*/
+  background-attachment: scroll;
+  overflow-y: auto;
+  background-image: url("./sazabi.jpg")
+}
+
+div.border-div{
+  border-width: 3px;  /*사방 모두 적용*/
+  border-top-width: 14px;
+  border-width : 3px 4px 5px 6px; /*상 우 하 좌*/
+  border-style: solid double dotted dashed; /* 스타일이 없으면 줄이 안보임 */
+  border-color : red blue green black;
+}

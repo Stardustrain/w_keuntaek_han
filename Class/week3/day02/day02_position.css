@@ -1,0 +1,59 @@
+/*자기자신이 기준*/
+.relative1{
+  width: 300px;
+  height: 200px;
+  background-color: black;
+}
+
+.relative2{
+  position : relative;
+  width:100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: red;
+  display: inline-block;
+  color:white;
+  top:50px;
+  left:70px;
+}
+
+/*반드시 고정*/
+.fixed{
+  position : fixed;
+  width:100px;
+  height: 100px;
+  background-color: blue;
+  color:white;
+  /*top:10px;
+  right: 10px;*/
+}
+
+.dummy{
+  width: 500px;
+  height: 500px;
+  background-color: lightgray;
+}
+
+.relative3{
+  position: relative;
+  top:30px;
+  left:40px;
+  width:350px;
+  height: 350px;
+  background-color: gray;
+}
+
+/*일정한 레이아웃 안에서 이동
+가장 가까운 부모를 기준으로 정렬 됨
+즉 부모가 없는경우 상위 태그....body를 기준으로 가져가고
+fixed가 부모이 경우 부모가 움직이지 않기떄문에 움직이지 않는다.
+*/
+.absolute{
+  position: absolute;
+  right:10px;
+  bottom:20px;
+  width:50px;
+  height: 50px;
+  background-color: cyan;
+}

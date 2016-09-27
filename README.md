@@ -21,6 +21,7 @@
 > **Unit3. HTML / CSS**<br>
 > :calendar: 2016.09.26~2016.09.30
 - 1. 태그 / 선택자 / 간단한 CSS
+- 2. table / float / position / CSS
 
 #5. private Study<br>
 >- [Data Structure](https://github.com/Stardustrain/codePractice/tree/master/dataStructure)

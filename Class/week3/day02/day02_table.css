@@ -1,0 +1,33 @@
+html, body{
+  margin: 0;
+  padding : 0;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+tr, th, td {
+  border : 1px solid black;
+  padding:5px 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #666;
+  color:white;
+}
+
+table>colgroup>col.col-1{
+  background-color : blue;
+}
+
+table>colgroup>col.col-3{
+  border-right-style: double;
+  border-width: 5px;
+  border-color: gray;
+}
+
+table>colgroup>col.col-4{
+  background-color: gray;
+}
