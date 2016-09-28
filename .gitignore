@@ -1,6 +1,7 @@
 *.bak
 *.png
 *.jpg
+*.pdf
 bootstrap-3.3.2-dist/
 # Created by https://www.gitignore.io/api/django
 

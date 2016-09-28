@@ -1,0 +1,37 @@
+h3{
+  text-align: center;
+}
+
+fieldset{
+  margin-bottom: 10px;
+}
+
+.form-control{
+  margin-bottom: 5px;
+
+}
+
+fieldset .form-control label{
+  /*inline에 block 조건을 주어야 크기 지정이 가능함*/
+  display: inline-block;
+  /*label속성의 수직 위치를 top으로 설정*/
+  vertical-align: top;
+  width:100px;
+}
+
+.submit{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 30px;
+  border : none;
+  transition-duration: 0.3s;
+}
+
+.submit:active{
+  background-color: lightgray;
+}
+
+.submit:hover{
+  background-color: gray;
+}
