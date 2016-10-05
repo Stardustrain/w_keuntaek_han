@@ -1,9 +1,9 @@
 ##django.db.models.Model
 
-##### 3. Field
+### 1. Field
  - field는 class 내의 attribute 형태로 선언되며, DB에 columns로 insert 됨
  
->##### 1. filed type
+>#### 1. filed type
 >1. **AutoField**
 
 >	1\. IntegerField는 ID(PK)가 자동으로 증가함
