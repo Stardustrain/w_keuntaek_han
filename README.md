@@ -24,6 +24,11 @@
 - 2. table / float / position / CSS
 - 3. form / sass / bootstrap
 
+<br>
+> **Unit4. Django**<br>
+>:calendar: 2016.10.04~
+- 1. django 개발환경 구축 / 간단한 app 구축
+
 #5. private Study<br>
 >- [Data Structure](https://github.com/Stardustrain/codePractice/tree/master/dataStructure)
 >- [Effective python](https://github.com/Stardustrain/codePractice)
