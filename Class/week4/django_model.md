@@ -97,4 +97,4 @@ class MyModel(models.Model):
     # file will be saved to MEDIA_ROOT/uploads/2015/01/30
     upload = models.FileField(upload_to='uploads/%Y/%m/%d/')```
 >> 
-
+>>>>>>> 643648f02a81e5495b419d5f7b8c4536a71eecd7
