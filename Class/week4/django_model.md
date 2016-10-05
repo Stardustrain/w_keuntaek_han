@@ -17,14 +17,14 @@
 - Table name은 ```[app name]_[class name]```으로 정해짐
 - id는 자동으로 pk선언 됨
  
- ---
+---
  
 ##### 2. models 사용
 
 - settings.py file의 INSTALLED_APPS부분에 ```'[app name]'```을 선언해야 함
 - models.py  file내의 변경으로 DB의 변경이 발생하면 반드시 ```makemigrations``` > ```migrate``` 순으로 변경 사항 반영
 
- ---
+---
  
 ##### 3. Field
  - field는 class 내의 attribute 형태로 선언되며, DB에 columns로 insert 됨
