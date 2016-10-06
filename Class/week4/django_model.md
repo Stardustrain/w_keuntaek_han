@@ -127,6 +127,7 @@ class Car(models.Model):
 >- ManyToManyField를 사용 
 >- ManyToManyField 사용 시 django가 알아서 Table을 생성함
 >- m1, m2테이블이 있다고 가정하면, 
+
 >>- m1과 m2 테이블의 PK를 새로운 m3이라는 테이블에 저장
 >>- m1과 m2는 m3의 PK를 FK로 참조하게 됨
 >
