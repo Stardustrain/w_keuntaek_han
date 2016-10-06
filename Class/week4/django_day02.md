@@ -31,5 +31,7 @@ q = Question.objects.get(pk=question_id)
 4. reverse의 의미
 >- hardcoding이 된 url이 아닌 namespace 및 name을 보고 역으로 찾아오는 것
 > e.g.
->```{% url 'polls:vote' %}
-> reverse(request, 'polls:vote', ret)```
+>```python
+> 1. {% url 'polls:vote' %}
+> 2. reverse(request, 'polls:vote', ret)
+>```
