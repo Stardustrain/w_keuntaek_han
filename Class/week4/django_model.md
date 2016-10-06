@@ -96,3 +96,36 @@ place = models.OneToOneField(
     verbose_name="related place",
 )
 >```
+
+---
+
+### 4. Relationships
+
+1. Many-to-one (1 : 다 관계)
+>- 특정 Table의 PK를 다수의 Table이 참조(FK)하는 경우.
+>- ForeignKeyField를 사용
+>- e.g.) 특정 공장과 그 공장에서 생산된 자동차의 관계
+>>- 특정 공장의 일련번호(PK)가 그곳에서 생산된 자동차의 프레임에 찍히는(FK)경우
+>```python
+from django.db import models
+
+class Manufacturer(models.Model):
+    # ...
+    pass
+
+class Car(models.Model):
+    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
+    # ...
+>```
+>
+2. Many-to-Many (다 : 다 관계)
+>- 각 테이블의 PK가 다른 테이블의 FK로 참조. 
+>- 하나 이상의 PK가 FK로 관계를 맺음
+>- 영화 테이블과 영화배우 테이블 간의 관계
+>- ManyToManyField를 사용 
+>- ManyToManyField 사용 시 django가 알아서 Table을 생성함
+>- m1, m2테이블이 있다고 가정하면, 
+>>- m1과 m2 테이블의 PK를 새로운 m3이라는 테이블에 저장
+>>- m1과 m2는 m3의 PK를 FK로 참조하게 됨
+>
+>
