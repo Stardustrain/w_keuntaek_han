@@ -12,16 +12,20 @@
 3. SQL - ORM
 >- ```python manage.py sqlmigrate [app_name] [migrate number (e.g. 0001)]```
 >- QuerySet은 list type으로 return
+>
 >>- objects.get([조건]) : 하나의 결과만을 가져옴
 >>- objects.filter([조건]) : 여러 결과를 가져옴
 > 
 > primary_key로 선언된 field는 id혹은 pk로 접근 가능함
 >- fk가 포함된 model의 값 추가
->>-fk 필드 부분에 관련 model obj를 그대로 넣어준다
+>
+>>- fk 필드 부분에 관련 model obj를 그대로 넣어준다
 >>- e.g : Question PK --> Choice question: FK
->>```q = Question.objects.get(pk=question_id)
+>>```python
+q = Question.objects.get(pk=question_id)
 >>c = Choice.objects.create(question=q, choice_text='test', votes=0)
->>c.save()``` 
+>>c.save()
+>>``` 
 >
 
 4. reverse의 의미
