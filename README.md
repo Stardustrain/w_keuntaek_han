@@ -27,7 +27,8 @@
 <br>
 > **Unit4. Django**<br>
 >:calendar: 2016.10.04~
-- 1. django 개발환경 구축 / 간단한 app 구축
+- 1. django 개발환경 구축 / django tutorial 간단한 app 구축 (계속)
+- 2. [간단한 app 구축](https://github.com/Stardustrain/homework_django/tree/master/h_django/polls)
 
 #5. private Study<br>
 >- [Data Structure](https://github.com/Stardustrain/codePractice/tree/master/dataStructure)
