@@ -83,5 +83,41 @@
 >
 >>- 두 테이블간의 관계에서 끼어들기 어려운 값을 다른 테이블로 생성해 줌
 >>- mtm field에 through=[다른 테이블 이름] 옵션으로 주어 참조하게 만든다
->>- Extra Field의 경우 값 변경시 반드시 중간자 테이블에서 값을 넣어주어야 함
->> 모든 테이블간의 역참조가 가능함)
+>>- Extra Field의 경우 값 변경시 반드시 중간자 테이블에서 값을 변경해 주어야 함
+>>-  모든 테이블간의 역참조가 가능함
+>>- add, set 등을 사용할 수 없고, 무조건 중간자 테이블에서 각 테이블의 인스턴스를 받아서 값을 생성해야 함
+>>- ManyToMany Field에 through="[중간자테이블이름]"을 선언해 준다.
+>>
+>>>```python
+>>>class Person(models.Model):
+>>>    name = models.CharField(max_length=128)
+>>>
+>>>    def __str__(self):
+>>>        return self.name
+>>>
+>>>
+>>>class Group(models.Model):
+>>>    name = models.CharField(max_length=128)
+>>>    members = models.ManyToManyField(Person, through="Membership")
+>>>
+>>>    def __str__(self):
+>>>        return self.name
+>>>
+>>>
+>>>class Membership(models.Model):
+>>>    person = models.ForeignKey(Person, on_delete=models.CASCADE)
+>>>    group = models.ForeignKey(Group, on_delete=models.CASCADE)
+>>>
+>>>    date_joined = models.DateField()
+>>>    invinte_reason = models.CharField(max_length=64)
+>>>```
+>>>
+>>>```python
+p1 = Person(name="person1")
+# 중간자 테이블에서 Person을 넘긴다
+g1 = Group(name="Group1")
+p1.save()
+g1.save()
+m1 = Membership(person=p1, group=g1, date_joined=date(2011, 10, 1), invite_reason="why?")
+m1.save()
+>>>```
