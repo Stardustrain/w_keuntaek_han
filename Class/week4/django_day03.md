@@ -56,15 +56,15 @@
 >>> 5. 값이 cascade로 얽혀있는 관계가 아니라서, 하나가 삭제되어도 관계된 값이 사라지지 않는다.
 >>>
 >>> 정리하자면, 
-
+>>>
 >>>```python
-class Toppings(models.Model):
-    title = models.CharField(max_length=20)
-class Pizza(models.Model):
-    title = models.CharField(max_length=30)
-    toppings = models.ManyToManyField(Toppings)
+>> class Toppings(models.Model):
+>>     title = models.CharField(max_length=20)
+>> class Pizza(models.Model):
+>>     title = models.CharField(max_length=30)
+>>     toppings = models.ManyToManyField(Toppings)
 >>>```
-
+>
 >>>```python
 >> p1=Pizza.objects.create(title='치즈피자')
 >> p1.save()
