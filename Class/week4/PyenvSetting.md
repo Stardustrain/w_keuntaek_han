@@ -68,7 +68,7 @@
 >
 
 ### 5. IDE settings
->- running IntelliJ of Pycharm
+>- running IntelliJ or Pycharm
 >- (if use IntellJ)
 >- open django Project directory
 >
