@@ -49,6 +49,7 @@
 
 ### 4. django project
 >- auto build django project
+>
 >>```shell
 >> (django)$ django-admin startproject test_app
 >>```
