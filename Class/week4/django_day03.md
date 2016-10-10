@@ -121,3 +121,37 @@ g1.save()
 m1 = Membership(person=p1, group=g1, date_joined=date(2011, 10, 1), invite_reason="why?")
 m1.save()
 >>>```
+>
+>- 4. Symmetrical Field
+>
+>>- mtm 필드에서 자기 자신과 관계를 맺을 때
+>>- 트위터 등에서 following과 follower의 관계 (방향성이 애매한 경우)
+>>- 대칭적 관계가 아님을 선언을 해 주어야 함
+>>- symmetrical=False 옵션이 필요함
+>>```python
+>> class Person(models.Model):
+>>     name = models.CharField(max_length=20)
+>>     relationship = models.ManyToManyField('self',
+>>                                           through='Relation',
+>>                                           # 대칭 테이블이 아닌 자신을 참조하는 테이블임을 선언
+>>                                           symmetrical=False,
+>>                                           related_name='related')
+>> 
+>>     def __str__(self):
+>>         return self.name
+>> 
+>> 
+>> RELATION_FOLLOWING = 1
+>> RELATION_BLOCKED = 2
+>> RELATION_STATUS = (
+>>     (RELATION_FOLLOWING, 'Following'),
+>>     (RELATION_BLOCKED, 'Blocked')
+>> )
+>> 
+>> 
+>> class Relation(models.Model):
+>>     from_person = models.ForeignKey(Person, related_name='from_person')
+>>     to_person = models.ForeignKey(Person, related_name='to_person')
+>>     status = models.IntegerField(choices=RELATION_STATUS)
+>>
+>>```
