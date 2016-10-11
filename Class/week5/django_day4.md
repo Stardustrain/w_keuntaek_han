@@ -13,8 +13,10 @@
 >>- e.g)유저의 이름과 상세 프로필을 테이블을 나누어 관리할 때
 >
 >- related_name option
+>
 >>- **역참조**시 피참조 테이블의 Field 값을 호출시 사용하는 일종의 변수명
 >>- 특정 테이블의 Field들이 다른 하나의 테이블을 참조하고 있는 경우, 모두 같은 테이블을 참조하고 있어 어느 Field를 역참조 해야하는지 명확히 알려줌
+>
 >>```python
 >> class Auth(models.Model):
 >>     auth_mode = models.CharField(max_length=20)
@@ -34,7 +36,7 @@
 
 3. Custom Field Types
  
->- [실습]해볼것(https://docs.djangoproject.com/en/1.10/howto/custom-model-fields/)
+>- [실습](https://docs.djangoproject.com/en/1.10/howto/custom-model-fields/)해볼것
  
  4. Meta options
  
@@ -64,6 +66,7 @@
 >- objects가 기본으로 선언됨
 >- manager 함수를 따로 만들어 model class 안쪽에 선언하여 사용이 가능함
 >- 자주 사용하는 query를 만들어 사용하면 편함
+>
 >>```python
 >> class DahlBookManager(models.Model):
 >>     def get_queryset(self):
